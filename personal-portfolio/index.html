@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardee Kapadiya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner Above Navbar -->
+    <div class="custom-banner">
+        <img src="images/banner.jpg" alt="Portfolio banner image">
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#henna">Henna</a></li>
+            <li><a href="#drawing">Drawing</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="profile-section">
+      <img src="images/yourphoto.jpg" class="profile-photo" alt="Your portrait">
+      <div class="profile-content">
+        <div>
+          <h1>Hi, I'm [Your Name]!</h1>
+          <p>
+            I'm an Indian girl who moved to the USA, bringing my roots, colors, and creativity with me! I’ve been passionate about art since I was a kid—drawing, painting, and losing myself in creative adventures.<br>
+            My journey includes winning school drawing competitions, learning classical mehndi from my elders, and making memories with every new creation.<br>
+            Now, I combine all my skills: henna art, drawing, photography, and YouTube—sharing my craft and culture with even more people!
+          </p>
+          <ul class="achievements">
+            <li>Winner of multiple art and mehndi competitions</li>
+            <li>Professional Henna artist with a flourishing side business</li>
+            <li>Specialized in drawing and portrait art since childhood</li>
+            <li>Experienced photographer, capturing people and places</li>
+            <li>YouTube creator sharing tutorials and creative vlogs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Henna Section -->
+    <section id="henna" class="section-split">
+      <div class="section-image">
+        <img src="images/henna_side.jpg" alt="Henna art by you">
+      </div>
+      <div class="section-content">
+        <h2>Henna</h2>
+        <p>
+          Henna has always been close to my heart. I started learning as a little girl in India, copying my mother's designs and getting mehndi on every family occasion.<br>
+          For a while, studies and life kept me busy, but when I came back to the USA, I picked up my cone again—and people loved my art!<br>
+          Soon it became my little business. Now, I get to make people feel special with unique mehndi designs, and it brings so much joy (and a bit of extra pocket money!).
+        </p>
+        <button onclick="toggleGallery('henna-gallery')">Show Examples</button>
+        <div id="henna-gallery" class="gallery-grid hide">
+          <img src="images/henna1.jpg" alt="Henna design 1">
+          <img src="images/henna2.jpg" alt="Henna design 2">
+          <img src="images/henna3.jpg" alt="Henna design 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Drawing Section -->
+    <section id="drawing" class="section-split">
+      <div class="section-image">
+        <img src="images/drawing_side.jpg" alt="Drawing by you">
+      </div>
+      <div class="section-content">
+        <h2>Drawing</h2>
+        <p>
+          Drawing has been my escape, my passion, and my happiness since childhood. From sketching cartoon characters to creating detailed portraits, it’s the one thing that’s always close to my heart.<br>
+          I love experimenting with pens, colors, and digital art, too! It’s the little things—like finishing a drawing at 2 am or doodling my favorite things—that make life so beautiful.
+        </p>
+        <button onclick="toggleGallery('drawing-gallery')">Show Examples</button>
+        <div id="drawing-gallery" class="gallery-grid hide">
+          <img src="images/drawing1.jpg" alt="Drawing 1">
+          <img src="images/drawing2.jpg" alt="Drawing 2">
+          <img src="images/drawing3.jpg" alt="Drawing 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="section-split">
+      <div class="section-image">
+        <img src="images/photography_side.jpg" alt="Photography by you">
+      </div>
+      <div class="section-content">
+        <h2>Photography</h2>
+        <p>
+          Capturing beautiful moments and stories through my lens is something I deeply enjoy. Photography lets me see the world in a new light and saves memories forever.<br>
+          I adore portrait shots and candid smiles, but I also love photographing landscapes and all the little details that make life colorful!
+        </p>
+        <button onclick="toggleGallery('photo-gallery')">Show Examples</button>
+        <div id="photo-gallery" class="gallery-grid hide">
+          <img src="images/photo1.jpg" alt="Photo 1">
+          <img src="images/photo2.jpg" alt="Photo 2">
+          <img src="images/photo3.jpg" alt="Photo 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube Section (centered with special glow) -->
+<section id="youtube" class="youtube-section highlight-youtube">
+  <div class="youtube-inner">
+    <h2>YouTube</h2>
+    <p>
+      My YouTube channel is my latest artistic adventure!<br>
+      I share tutorials, vlogs, behind-the-scenes, and my favorite creative hacks.<br>
+      Come join the community of art lovers and see my latest work in action!
+    </p>
+    <div class="yt-video-glow">
+      <iframe width="400" height="220" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        Connect with me:
+        <a href="mailto:hardee@email.com">Email</a>  |
+        <a href="https://instagram.com/yourusername">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
