@@ -161,47 +161,22 @@ button:hover {
     align-items: center;
 }
 
-.yt-video-glow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.6em;
-    width: 420px;
-    max-width: 90vw;
-    position: relative;
+.yt-link {
+    display: inline-block;
+    margin-top: 1.5em;
+    padding: 0.6em 1.6em;
+    border-radius: 20px;
+    background: #257c54;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 0 10px #e2c28733;
 }
 
-.yt-video-glow::before {
-    content: '';
-    position: absolute;
-    top: 17px; left: 17px; right: 17px; bottom: 17px;
-    border-radius: 22px;
-    background: radial-gradient(circle, #fffbea55 40%, #e2c28722 65%, transparent 100%);
-    z-index: 0;
-    filter: blur(7px);
-    pointer-events: none;
+.yt-link:hover {
+    background: #c49e4c;
+    color: #22372a;
 }
-
-.youtube-section iframe {
-    position: relative;
-    z-index: 1;
-    border-radius: 15px;
-    border: 4px solid #e2c287;
-    /* optional shadow for more glow */
-    box-shadow: 0 0 28px #e2c28766, 0 0 2px #257c5444;
-}
-
-@media (max-width: 600px) {
-    .yt-video-glow, .youtube-section iframe {
-        width: 98vw !important;
-        max-width: 99vw;
-        min-width: 0;
-    }
-    .youtube-section iframe {
-        height: 185px;
-    }
-}
-
 footer {
     text-align: center;
     padding: 2.1em 0 1em 0;
